@@ -1,0 +1,28 @@
+name: CombatLog
+version: 2.3.1
+description: Punish players who log out while in Combat.
+author: iiSnipez
+authors: [JackProehl]
+website: http://dev.bukkit.org/server-mods/combatlog
+
+main: me.iiSnipez.CombatLog.CombatLog
+database: false
+softdepend: [Factions, LibsDisguises, iDisguise]
+
+commands:
+    combatlog:
+        description: Primary command for the CombatLog plugin.
+        aliases: [cl]
+    tag:
+        description: Command used to check remaining Tag time.
+        aliases: [ct]
+permissions:
+    combatlog.reload:
+        description: Allows one to reload the configuration file's options.
+        default: op
+    combatlog.update:
+        description: Allows one to see UpdateChecks upon logging in.
+        default: op
+    combatlog.bypass:
+        description: Allows one to bypass all of CombatLog's log prevention methods.
+        default: false
