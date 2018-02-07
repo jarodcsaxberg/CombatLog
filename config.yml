@@ -1,0 +1,86 @@
+############################################################
+# +-------- Designed and Developed by JackProehl --------+ #
+# +---------- Updated and Managed by iiSnipez -----------+ #
+# +----- Consider donating: http://bit.ly/CL-Donate -----+ #
+############################################################
+
+# Please open a ticket to report all bugs and glitches.
+
+UpdateCheck: true
+Metrics: true
+MOTD: true
+
+Disabled-Worlds:
+  - world_custom
+
+# Set Broadcast to true to broadcast when a player CombatLogs.
+Broadcast: true
+
+Tag-Duration: 10
+Block-Teleportation: true
+Remove-Invis-Potion: true
+
+# Use an ActionBar to display a CombatTag. (Supports 1.8+)
+ActionBar: true
+
+# Use the BossBar to display a CombatTag. (Supports )
+BossBar: true
+
+# Add modes you want removed during Combat under Remove-Modes.
+# Available Modes: fly, disguise.
+Remove-Modes:
+  - fly
+  - disguise
+
+# onKick: if true, remove Tags when players are kicked.
+# onLagout: if true, remove Tags when players lag out.
+# inSafeZone if true, remove Tags when players enter SafeZone (Factions support)
+# inPvPDisabledArea: if true, remove Tags when players enter areas with PvP disabled (WorldGuard support) 
+Remove-Tag:
+  onKick: false
+  onLagout: false
+  inSafeZone: true
+  inPvPDisabledArea: true
+
+# Block commands from being used, or allow only certain commands to be used (aka whitelist mode)
+# Only one of the two should be true
+Block-Commands: true
+Whitelist-Mode: false
+Commands:
+  - home
+  - spawn
+  - tpa
+  - tpaccept
+  - tpahere
+  - warp
+  - fly
+  - disguise
+
+# Kill players when they CombatLog.
+Kill: true
+
+# Execute commands when player CombatLogs
+Execute-Commands: false
+ExecutedCommands:
+  - jail <name> jail 10
+
+############################################################
+# +-----------------------Messages-----------------------+ #
+############################################################
+
+# TO DISABLE A MESSAGE, SET IT AS 'false'!
+UpdateCheckMessage: '&8[&4CombatLog&8]&a CombatLog update available! http://bit.ly/CL-DL.'
+MOTDMessage: '&8[&4CombatLog&8]&7 Combat protection system initalized. Engineered by JackProehl and iiSnipez.'
+BroadcastMessage: '&8[&4CombatLog&8]&c <name> &7logged out while in combat!'
+TaggerMessage: '&8[&4CombatLog&8]&7 You have combat tagged &c<name>&7. Do not logout!'
+TaggedMessage: '&8[&4CombatLog&8]&7 You have been combat tagged by &c<name>&7. Do not logout!'
+UntagMessage: '&8[&4CombatLog&8]&7 You are no longer in combat. You may logout.'
+InCombatMessage: '&8[&4CombatLog&8]&7 You are tagged for &c<time> &7more seconds.'
+NotInCombatMessage: '&8[&4CombatLog&8]&7 You are not in Combat.'
+ActionBarInCombatMessage: '&l&7In combat for &c<time> &7seconds.'
+ActionBarUntagMessage: '&l&7You are no longer in combat.'
+RemoveModesMessage: '&8[&4CombatLog&8]&c Your <mode> has been removed.'
+RemoveInvisMessage: '&8[&4CombatLog&8]&c Your invisibility potion was removed!'
+BlockCommandsMessage: '&8[&4CombatLog&8]&c You cannot use that command while in combat!'
+BlockTeleportationMessage: '&8[&4CombatLog&8]&c You cannot teleport while in Combat.'
+KillMessage: '&8[&4CombatLog&8]&c You were killed for CombatLogging!'
